@@ -1,0 +1,17 @@
+.category {
+    background-color: $color-primary;
+    color: $color-secondary;
+    text-align: center;
+    border: 1px solid $third-color;
+    margin-bottom: 3%;
+    &:hover {
+        @include hover();
+    }
+    &-click {
+        color: $color-secondary;
+        text-align: center;
+        border: 1px solid $third-color;
+        margin-bottom: 3%;
+        @include hover();
+    }
+}

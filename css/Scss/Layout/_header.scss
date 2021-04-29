@@ -1,0 +1,28 @@
+// Header
+
+#title-elements {
+    @include flex-direction-row();
+    justify-content: left;
+    text-align: start;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 1px solid $third-color;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+#photo-header {
+    width: 30%;
+    @include mobile-only() {
+        width: 100%;
+    }
+}
+
+#titre-CV {
+    padding-left: 5%;
+    vertical-align: middle;
+    @include mobile-only() {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}

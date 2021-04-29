@@ -1,0 +1,35 @@
+img {
+    vertical-align: middle;
+    margin-right: 1%;
+    width: auto;
+    height: auto;
+        &.photo {
+            width: 100%;
+            @include mobile-only {
+                width: 80%;
+                text-align: center;
+            }
+        }
+        &.logo {
+            &__category {
+                height: 40px;
+                @include mobile-only {
+                    height: 30px;
+                }
+            }
+            &__skills {
+                height: 30px;
+                    &__smaller {
+                        height: 28px;
+                    }
+            }
+        }
+        &.chevron {
+            height: 15px;
+            margin-left: 5%;
+            @include mobile-only {
+                height: 8px;
+                margin-left: 3%;
+            }
+        }
+}

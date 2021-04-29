@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color-primary;
+    @include mobile-only() {
+        background-color: $color-secondary;
+    }
+};
+
+#page {
+    background-color: $color-secondary;
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    font-family: $font-secondary;
+    font-size: 1em;
+    @include mobile-only() {
+        width: 100%;
+        padding: 0%;
+        font-size: 0.9em;
+    }
+};

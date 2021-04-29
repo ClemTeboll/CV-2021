@@ -1,0 +1,13 @@
+{
+    "name": "writting-sass",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./css/Scss/main.scss:./css/style.css --style compressed",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": "last 4 versions"
+    }

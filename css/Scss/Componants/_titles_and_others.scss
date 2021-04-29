@@ -1,0 +1,22 @@
+// Titres et sous-titres
+h1 {
+    text-align: center;
+    color: $color-primary;
+    font-size: 2em;;
+}
+
+h1, h2, h3 {
+    font-family: $font-primary;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: $font-primary;
+        text-decoration: underline;
+    }
+}

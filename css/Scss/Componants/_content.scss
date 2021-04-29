@@ -1,0 +1,32 @@
+.contents {
+    background-color: $color-secondary;
+    color: $third-color;
+    text-align: left;
+    padding: 2%;
+    & #personal-information {
+        @include flex-direction-row();
+        @include mobile-only() {
+            flex-wrap: wrap;
+        }
+        & #info1 {
+            width: 400px;
+            @include mobile-only() {
+                width: 350px;
+            }
+        }
+        & #info2 {
+            width: 400px;
+            text-align: right;
+            @include mobile-only() {
+                width: 350px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+h2 {
+    font-family: $font-primary;
+    font-size: 1.5em;
+    text-align: middle;
+}

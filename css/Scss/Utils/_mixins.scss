@@ -1,0 +1,17 @@
+// MIXINS
+
+@mixin hover($color: lightness-shift($color-primary)) {
+    background-color: $color;
+}
+
+@mixin flex-direction-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content
+    }
+};

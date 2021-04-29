@@ -1,0 +1,15 @@
+@import "./Utils/variables";;
+@import "./Utils/mixins";
+@import "./Utils/functions";
+
+@import "./Componants/category";
+@import "./Componants/content";
+@import "./Componants/titles_and_others";
+
+@import "./Base/box-sizing";
+@import "./Base/fonts";
+@import "./Base/img";
+
+@import "./Layout/header";
+@import "./Layout/section";
+@import "./Layout/footer";

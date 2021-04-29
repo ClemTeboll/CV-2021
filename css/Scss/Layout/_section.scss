@@ -1,0 +1,22 @@
+// Section
+
+section {
+    @include flex-direction-row();
+    @include mobile-only() {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+aside {
+    width: 44%;
+    @include mobile-only() {
+        width: 100%;
+    }
+}
+
+article {
+    width: 54%;
+    @include mobile-only() {
+        width: 100%;
+    }
+}
